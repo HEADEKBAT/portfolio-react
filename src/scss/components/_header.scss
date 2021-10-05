@@ -1,0 +1,55 @@
+.header {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        position: relative;
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+        transition: all 0.6s ease 0s;
+        &:hover {
+            transform: scale(1.1);
+            color: #ff4d5a;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    &__social {
+        margin: 0px 10px;
+        transition: all 0.6s ease 0s;
+
+        &_link {
+            cursor: pointer;
+        }
+
+        svg {
+            path {
+                fill: #fff;
+                transition: all 0.6s ease 0s;
+            }
+            display: block;
+            height: 40px;
+            width: 40px;
+        }
+        &:hover {
+            transform: scale(1.1);
+            svg {
+                path {
+                    fill: #ff4d5a;
+                }
+            }
+        }
+    }
+}
